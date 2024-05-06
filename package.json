@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "shopify theme dev -s sovi-creative-development-sandbox.myshopify.com",
+    "build": "vite build --minify",
+    "watch": "vite build --watch"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.11"
+  },
+  "devDependencies": {
+    "tailwindcss-rem-to-px": "^0.1.0"
+  }
+}

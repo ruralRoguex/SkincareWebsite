@@ -36,10 +36,6 @@ quick-order-list .quantity__button {
   z-index: 1;
 }
 
-.variant-item__image-container.global-media-settings::after {
-  content: none;
-}
-
 @media screen and (min-width: 990px) {
   .quick-order-list__total {
     position: sticky;
@@ -477,6 +473,10 @@ quick-order-list-remove-button:hover .icon-remove {
 
   .quick-order-list__table td {
     padding-top: 1.6rem;
+  }
+
+  .quick-order-list__table .desktop-row-error td {
+    padding-top: 0;
   }
 
   .quick-order-list__table .desktop-row-error td {

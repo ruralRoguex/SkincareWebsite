@@ -1103,9 +1103,8 @@ class VariantSelects extends HTMLElement {
   }
 
   updateMedia(html) {
-    const sectionId = this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section;
     const mediaGallerySource = document.querySelector(`[id^="MediaGallery-${this.dataset.section}"] ul`);
-    const mediaGalleryDestination = html.querySelector(`[id^="MediaGallery-${sectionId}"] ul`);
+    const mediaGalleryDestination = html.querySelector(`[id^="MediaGallery-${this.dataset.section}"] ul`);
 
     const refreshSourceData = () => {
       const mediaGallerySourceItems = Array.from(mediaGallerySource.querySelectorAll('li[data-media-id]'));

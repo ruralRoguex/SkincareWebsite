@@ -1,2 +1,2 @@
 # SkincareWebsite
-dawn theme build test for Sovi Creative - 
+dawn theme build test for Sovi Creative - Skincare Website

@@ -36,11 +36,19 @@
             "text": "Summer Sale Coming Soon!",
             "link": ""
           }
+        },
+        "announcement_Chi4Ly": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement-bar-0",
-        "announcement_UwtEnq"
+        "announcement_UwtEnq",
+        "announcement_Chi4Ly"
       ],
       "settings": {
         "color_scheme": "scheme-1",

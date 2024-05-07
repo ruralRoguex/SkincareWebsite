@@ -1,16 +1,21 @@
+/*********************************
+* Author: Blake Green
+* Client: Sovi Creative - Skincare Website
+* Development Date: 03/05/2024
+* Production Date: N/A
+* About: Homepage Creation
+**********************************/
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
 @tailwind components;
 @tailwind utilities;
 
-/*********************************
-* Author: Blake Green
-* Client: Sovi - Skincare Website
-* Development Date: 03/05/2024
-* Production Date: N/A
-* About: Homepage Creation
-**********************************/
+
+@font-face {
+    font-family: "Roslindale";
+    src: url("./assets/Roslindale-TextBold-Testing.woff");
+}
 
 /* CSS Overwrites */
 .hidden {
@@ -34,7 +39,7 @@
 
 /* Header */
 .logo {
-    font-family: Roslindale;
+    font-family: "Roslindale", "sans-serif";
     font-size: 30px;
     font-weight: 500;
     line-height: 34.5px;

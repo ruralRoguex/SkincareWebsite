@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+/*********************************
+* Author: Blake Green
+* Client: Sovi Creative - Skincare Website
+* Development Date: 03/05/2024
+* Production Date: N/A
+* About: Homepage Creation
+**********************************/
+.-tw-inset-1{
+    inset: -4px !important;
+}
+.tw--inset-1{
+    inset: -4px !important;
+}
+.-tw-top-1{
+    top: -4px !important;
+}
+.tw--top-1{
+    top: -4px !important;
+}
+.tw-space-y-reverse > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 1 !important;
+}
+.tw-space-x-reverse > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 1 !important;
+}
+.tw-divide-y-reverse > :not([hidden]) ~ :not([hidden]){
+    --tw-divide-y-reverse: 1 !important;
+}
+.tw-divide-x-reverse > :not([hidden]) ~ :not([hidden]){
+    --tw-divide-x-reverse: 1 !important;
+}
+.tw-ordinal{
+    --tw-ordinal: ordinal !important;
+    font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction) !important;
+}
+.tw-slashed-zero{
+    --tw-slashed-zero: slashed-zero !important;
+    font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction) !important;
+}
+.tw-ring-inset{
+    --tw-ring-inset: inset !important;
+}
+.tw-contain-size{
+    --tw-contain-size: size !important;
+    contain: var(--tw-contain-size) var(--tw-contain-layout) var(--tw-contain-paint) var(--tw-contain-style) !important;
+}
+.tw-contain-layout{
+    --tw-contain-layout: layout !important;
+    contain: var(--tw-contain-size) var(--tw-contain-layout) var(--tw-contain-paint) var(--tw-contain-style) !important;
+}
+.tw-contain-paint{
+    --tw-contain-paint: paint !important;
+    contain: var(--tw-contain-size) var(--tw-contain-layout) var(--tw-contain-paint) var(--tw-contain-style) !important;
+}
+.tw-contain-style{
+    --tw-contain-style: style !important;
+    contain: var(--tw-contain-size) var(--tw-contain-layout) var(--tw-contain-paint) var(--tw-contain-style) !important;
+}
+.\[overflow-anchor\:none\]{
+    overflow-anchor: none !important;
+}
+.\[overflow-style\:none\]{
+    overflow-style: none !important;
+}
+.\[transition\:background-color_\.2s_linear\2c _height_\.2s_ease-in-out\]{
+    transition: background-color .2s linear, height .2s ease-in-out !important;
+}
+.\[transition\:background-color_\.2s_linear\2c _opacity_\.2s_linear\]{
+    transition: background-color .2s linear, opacity .2s linear !important;
+}
+.\[transition\:background-color_\.2s_linear\2c _width_\.2s_ease-in-out\]{
+    transition: background-color .2s linear, width .2s ease-in-out !important;
+}
+.\[vite\:css\]{
+    vite: css !important;
+}
+.\[vite\:html\]{
+    vite: html !important;
+}
+@font-face {
+    font-family: "Roslindale";
+    src: url("/custom.css");
+}
+/* CSS Overwrites */
+.hidden {
+    display: none !important;
+}
+.button--primary.button-black {
+    background-color: #000 !important;
+    border-radius: 30px;
+    padding: 10px, 30px, 10px, 30px;
+    gap: 10px;
+    border: none !important;
+
+    --shadow-horizontal-offset: none !important;
+    --shadow-vertical-offset: none !important;
+    --shadow-blur-radius: none !important;
+    --shadow-opacity: none !important;
+    --shadow-visible: none !important;
+    --border-offset: none !important;
+    --border-opacity: none !important;
+}
+/* Header */
+.logo {
+    font-family: "Roslindale", "sans-serif";
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34.5px;
+    text-align: center;
+}
+.list-menu__item {
+    font-family: Karla;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+}
+/* Annoucement Bar */
+.utility-bar {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+/* Slideshow */
+.banner__media {
+    right: 0 !important;
+    width: 50% !important;
+}
+/* .banner__content {
+    background: #F6F5EC !important;
+    left: 0 !important;
+    width: 50% !important;
+} */
+.banner__heading {
+    font-family: Karla;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 66px !important;
+    letter-spacing: -0.5px !important;
+    text-align: left;
+}
+.banner__text {
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px !important;
+    text-align: left;
+}
+/* Warranty Bar */
+.warranty-bar {
+    background: #D6D9CD !important;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    min-height: 95px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.warranty-image-container {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.warranty-text {
+    color: #000;
+    width: 195px;
+    text-transform: uppercase;
+    line-height: 19.5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+/* Shop By Skin Type */
+.shopbyskintype-container {
+    margin: 0 auto;
+    padding: 50px;
+}
+.shopbyskintype-text-container {
+    margin: 0 auto;
+    max-width: 640px;
+}
+.shopbyskintype-title {
+    font-family: Karla;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55.2px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    color:#000;
+}
+.shopbyskintype-description {
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color:#000;
+}
+/* Multi-Row Section */
+.image-with-text__text-item {
+    padding: 95px !important;
+    background: #D6D9CD !important;
+}
+.image-with-text__text-item:nth-child(1) {
+    background: #CFC7C0 !important;
+}
+/* Media Rules */
+.slideshow__controls .slider-buttons {
+    display: none !important;
+}
+@media screen and (max-width: 749px) {
+    .slideshow__controls .slider-buttons {
+        display: block !important;
+    }
+}
+@media (prefers-color-scheme: dark){
+    @media (min-width: 1440px){
+        .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
+            paint-order: markers !important;
+        }
+    }
+}

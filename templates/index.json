@@ -74,6 +74,18 @@
     },
     "warranty_bar_a3Kgz4": {
       "type": "warranty-bar",
+      "blocks": {
+        "warranty_block_8UEw9X": {
+          "type": "warranty_block",
+          "settings": {
+            "warranty_line": "Hassle free return policy. Insert your copy here.",
+            "warranty_image": "shopify:\/\/shop_images\/parcel.png"
+          }
+        }
+      },
+      "block_order": [
+        "warranty_block_8UEw9X"
+      ],
       "settings": {
       }
     },

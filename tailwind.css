@@ -200,7 +200,7 @@
 }
 
 /* Media Rules */
-.card__heading h2 {
+.article-card .card__heading {
     font-family: Karla;
     font-size: 32px;
     font-weight: 500;

@@ -255,10 +255,10 @@
     letter-spacing: 1px;
     text-align: left;
     text-transform: uppercase;
-    /* text-decoration: underline; */
+    text-decoration: underline;
 }
 /* Media Rules */
-.card__heading h2 {
+.article-card .card__heading {
     font-family: Karla;
     font-size: 32px;
     font-weight: 500;

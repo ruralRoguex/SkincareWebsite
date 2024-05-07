@@ -154,8 +154,21 @@
 .image-with-text__text-item:nth-child(1) {
     background: #CFC7C0 !important;
 }
-
-
+.image-with-text__heading {
+    font-family: Karla;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55.2px;
+    letter-spacing: -1.5px;
+    text-align: left;
+}
+.image-with-text__text {
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
 
 /* Media Rules */
 .slideshow__controls .slider-buttons {

@@ -16,7 +16,7 @@ export default {
     extend: {
       fontFamily: {
         'heading': 'var(--font-heading-family)',
-        'roslindale':["Roslindale", "sans-serif"],
+        // 'roslindale':["Roslindale", "sans-serif"],
       },
     },
   },

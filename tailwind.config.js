@@ -10,7 +10,7 @@ export default {
   theme: {
     screens: {
       'md': '750px',
-      'lg': '990px',
+      'lg': '1440px',
     },
     extend: {
       fontFamily: {
@@ -26,6 +26,5 @@ export default {
     remToPxPlugin({
       baseFontSize: 16,
     })
-  ],
-  darkMode: "class"
+  ]
 }

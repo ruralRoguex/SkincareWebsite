@@ -227,8 +227,10 @@
         display: block !important;
     }
 }
-@media (min-width: 990px) {
-    .dark\:lg\:hover\:\[paint-order\:markers\]:hover:is(.tw-dark *) {
-        paint-order: markers !important;
+@media (prefers-color-scheme: dark) {
+    @media (min-width: 1440px) {
+        .dark\:lg\:hover\:\[paint-order\:markers\]:hover {
+            paint-order: markers !important;
+        }
     }
 }

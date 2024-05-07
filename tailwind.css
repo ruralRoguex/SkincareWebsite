@@ -10,12 +10,12 @@
     padding: 10px;
     min-height: 95px;   
 }
-.warranty-image {
+/* .warranty-image {
     display: flex;
 }
 .warranty-text-container {
     display: flex;
-}
+} */
 .warranty-text {
     color: #000;
     /* width: 207px; */

@@ -1941,9 +1941,6 @@ video {
     padding: 10px;
     min-height: 95px;   
 }
-.warranty-image-container {
-    display: flex;
-}
 .warranty-image {
     display: flex;
 }
@@ -1952,7 +1949,7 @@ video {
 }
 .warranty-text {
     color: #000;
-    width: 207px;
+    /* width: 207px; */
     text-transform: uppercase;
 }
 .hover\:font-bold:hover {

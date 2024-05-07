@@ -10,9 +10,6 @@
     padding: 10px;
     min-height: 95px;   
 }
-.warranty-image-container {
-    display: flex;
-}
 .warranty-image {
     display: flex;
 }
@@ -21,6 +18,6 @@
 }
 .warranty-text {
     color: #000;
-    width: 207px;
+    /* width: 207px; */
     text-transform: uppercase;
 }

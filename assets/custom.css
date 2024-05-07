@@ -86,15 +86,13 @@
     background-color: #000 !important;
     border-radius: 4px !important;
 }
-.slider__slide {
-    background: #F6F5EC !important;
-}
 .banner__media {
     right: 0 !important;
     width: 50% !important;
 }
 .banner__content {
     background: #F6F5EC !important;
+    width: 50% !important;
 }
 .banner__heading {
     font-family: Karla;

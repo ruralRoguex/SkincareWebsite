@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import remToPxPlugin from 'tailwindcss-rem-to-px';
+
 export default {
   prefix: 'tw-',
   important: true,
@@ -22,7 +23,7 @@ export default {
     preflight: false,
  },
   plugins: [
-    require("tw-elements/plugin.cjs"),
+    require("./node_modules/tw-elements/plugin.cjs"),
     remToPxPlugin({
       baseFontSize: 16,
     })

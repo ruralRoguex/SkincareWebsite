@@ -82,10 +82,11 @@
             "warranty_text": "Hassle Free Return Policy. Insert Your Copy Here."
           }
         },
-        "image_tHFJVe": {
+        "image_cmQwRp": {
           "type": "image",
           "settings": {
-            "warranty_text": "Insert copy here!"
+            "image": "shopify:\/\/shop_images\/parcel.png",
+            "warranty_text": "Free Shipping on orders over $XXX"
           }
         },
         "image_GpLjWK": {
@@ -103,7 +104,7 @@
       },
       "block_order": [
         "image_LQJHbe",
-        "image_tHFJVe",
+        "image_cmQwRp",
         "image_GpLjWK",
         "image_xytQUc"
       ],

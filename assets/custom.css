@@ -238,7 +238,24 @@
     text-align: left;
     max-width: 530px;
 }
+/* Featured Blog Posts */
+.article-card__excerpt {
+    font-family: Inconsolata;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    letter-spacing: 1px;
+    text-align: left;
+}
 /* Media Rules */
+.card__heading h2 {
+    font-family: Karla;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+    letter-spacing: -0.5px;
+    text-align: left;
+}
 .slideshow__controls .slider-buttons {
     display: none !important;
 }

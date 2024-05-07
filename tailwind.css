@@ -4,6 +4,10 @@
 .hidden {
     display: none !important;
 }
+.button--primary {
+    background-color: #000 !important;
+    border-radius: 4px !important;
+}
 .banner__media {
     right: 0 !important;
     width: 50% !important;
@@ -29,7 +33,7 @@
 }
 .warranty-text {
     color: #000;
-    width: 225px;
+    width: 195px;
     text-transform: uppercase;
     line-height: 19.5px;
     font-size: 13px;

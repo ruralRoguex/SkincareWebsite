@@ -40,7 +40,14 @@
         "announcement_Chi4Ly": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Subscribe with Email for Updates!",
+            "link": ""
+          }
+        },
+        "announcement_rcKXEK": {
+          "type": "announcement",
+          "settings": {
+            "text": "Face Wash 20% Off Right Now",
             "link": ""
           }
         }
@@ -48,13 +55,14 @@
       "block_order": [
         "announcement-bar-0",
         "announcement_UwtEnq",
-        "announcement_Chi4Ly"
+        "announcement_Chi4Ly",
+        "announcement_rcKXEK"
       ],
       "settings": {
         "color_scheme": "scheme-1",
         "show_line_separator": true,
         "show_social": false,
-        "auto_rotate": false,
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "enable_country_selector": false,
         "enable_language_selector": false

@@ -150,6 +150,14 @@
     font-weight: 500;
 }
 
+.image-with-text__content {
+    padding: 95px;
+    background: #D6D9CD !important;
+}
+.image-with-text__content:nth-of-type(even) {
+    background: #CFC7C0 !important;
+}
+
 /* Media Rules */
 .slideshow__controls .slider-buttons {
     display: none !important;

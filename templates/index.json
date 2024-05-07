@@ -92,7 +92,8 @@
         "image_GpLjWK": {
           "type": "image",
           "settings": {
-            "warranty_text": "Insert copy here!"
+            "image": "shopify:\/\/shop_images\/parcel.png",
+            "warranty_text": "Secure Checkout . Insert more copy here"
           }
         },
         "image_xytQUc": {

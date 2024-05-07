@@ -119,6 +119,7 @@
         "row_kh4iFX": {
           "type": "row",
           "settings": {
+            "image": "shopify:\/\/shop_images\/hand_cream.jpg",
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",

@@ -21,5 +21,6 @@
 }
 .warranty-text {
     color: #000;
-    width: 207px
+    width: 207px;
+    text-transform: uppercase;
 }

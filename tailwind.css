@@ -5,3 +5,6 @@
 .hidden {
     display: none !important;
 }
+.warranty-bar {
+    background: #D6D9CD;
+}

@@ -1,9 +1,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/*********************************
+* Author: Blake Green
+* Client: Sovi - Skincare Website
+* Development Date: 03/05/2024
+* Production Date: N/A
+* About: Homepage Creation
+**********************************/
+
+/* CSS Overwrites */
 .hidden {
     display: none !important;
 }
+.button--primary.button-black {
+    background-color: #000 !important;
+    border-radius: 30px;
+    padding: 10px, 30px, 10px, 30px;
+    gap: 10px;
+    border: none !important;
+
+    --shadow-horizontal-offset: none !important;
+    --shadow-vertical-offset: none !important;
+    --shadow-blur-radius: none !important;
+    --shadow-opacity: none !important;
+    --shadow-visible: none !important;
+    --border-offset: none !important;
+    --border-opacity: none !important;
+}
+
+/* Header */
 .logo {
     font-family: Roslindale;
     font-size: 30px;
@@ -20,26 +46,14 @@
     text-align: left;
     text-transform: uppercase;
 }
+
+/* Annoucement Bar */
 .utility-bar {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
-.button--primary.button-black {
-    background-color: #000 !important;
-    border-radius: 30px;
-    padding: 10px, 30px, 10px, 30px;
-    gap: 10px;
-    border: none !important;
 
-    --shadow-horizontal-offset: none !important;
-    --shadow-vertical-offset: none !important;
-    --shadow-blur-radius: none !important;
-    --shadow-opacity: none !important;
-    --shadow-visible: none !important;
-    --border-offset: none !important;
-    --border-opacity: none !important;
-    
-}
+/* Slideshow */
 .banner__media {
     right: 0 !important;
     width: 50% !important;
@@ -64,6 +78,8 @@
     line-height: 24px !important;
     text-align: left;
 }
+ 
+/* Warranty Bar */
 .warranty-bar {
     background: #D6D9CD !important;
     border-top: 1px solid black;

@@ -5,6 +5,7 @@ export default {
   important: true,
   content: [
     "./**/*.{js,json,liquid}",
+    "./node_modules/tw-elements/js/**/*.js",
   ],
   theme: {
     screens: {
@@ -21,8 +22,10 @@ export default {
     preflight: false,
  },
   plugins: [
+    require("tw-elements/plugin.cjs"),
     remToPxPlugin({
       baseFontSize: 16,
     })
   ],
+  darkMode: "class"
 }

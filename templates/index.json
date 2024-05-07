@@ -72,19 +72,40 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "warranty_bar_a3Kgz4": {
-      "type": "warranty-bar",
+    "four_col_page_tiles_XFmbxi": {
+      "type": "four-col-page-tiles",
       "blocks": {
-        "warranty_block_8UEw9X": {
-          "type": "warranty_block",
+        "image_LQJHbe": {
+          "type": "image",
           "settings": {
-            "warranty_line": "Hassle free return policy. Insert your copy here.",
-            "warranty_image": "shopify:\/\/shop_images\/parcel.png"
+            "image": "shopify:\/\/shop_images\/parcel.png",
+            "warranty_text": "Hassle Free Return Policy. Insert Your Copy Here."
+          }
+        },
+        "image_tHFJVe": {
+          "type": "image",
+          "settings": {
+            "warranty_text": "Insert copy here!"
+          }
+        },
+        "image_GpLjWK": {
+          "type": "image",
+          "settings": {
+            "warranty_text": "Insert copy here!"
+          }
+        },
+        "image_xytQUc": {
+          "type": "image",
+          "settings": {
+            "warranty_text": "Insert copy here!"
           }
         }
       },
       "block_order": [
-        "warranty_block_8UEw9X"
+        "image_LQJHbe",
+        "image_tHFJVe",
+        "image_GpLjWK",
+        "image_xytQUc"
       ],
       "settings": {
       }
@@ -92,6 +113,6 @@
   },
   "order": [
     "slideshow_JkXwfL",
-    "warranty_bar_a3Kgz4"
+    "four_col_page_tiles_XFmbxi"
   ]
 }

@@ -81,10 +81,10 @@
 
 /* Media Rules */
 .slideshow__controls .slider-buttons {
-    display: block !important;
+    display: none !important;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 749px) {
     .slideshow__controls .slider-buttons {
-        display: none !important;
+        display: block !important;
     }
 }

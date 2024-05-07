@@ -12,6 +12,9 @@
     right: 0 !important;
     width: 50% !important;
 }
+.banner__heading {
+    line-height: 24px !important;
+}
 .warranty-bar {
     background: #D6D9CD !important;
     padding: 10px;

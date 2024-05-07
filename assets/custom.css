@@ -186,7 +186,7 @@
 }
 .shopbyskintype-text-container {
     margin: 0 auto;
-    max-width: 640px;
+    max-width: 675px;
 }
 .shopbyskintype-title {
     font-family: Karla;
@@ -196,6 +196,7 @@
     letter-spacing: -1.5px;
     text-align: center;
     color:#000;
+    padding-bottom: 25px;
 }
 .shopbyskintype-description {
     font-family: Karla;

@@ -1,116 +1,118 @@
 <section id="{{ 'home-' | append: section.id }}">
-    <div class="shopbyskintype-text-container">
-        <div class="shopbyskintype-title">{{ section.settings.title }}</div>
-        <div class="shopbyskintype-description">{{ section.settings.description }}</div>
-    </div>
-    <ul
-        class="mb-5 flex list-none flex-col flex-wrap ps-0 md:flex-row"
-        id="pills-tab"
-        role="tablist"
-        data-twe-nav-ref>
-            <li role="presentation">
-                <a
-                    href="#pills-dry-skin"
-                    class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
-                    id="pills-dry-skin-tab"
-                    data-twe-toggle="pill"
-                    data-twe-target="#pills-dry-skin"
-                    data-twe-nav-active
-                    role="tab"
-                    aria-controls="pills-dry-skin"
-                    aria-selected="true"
-                    >Dry Skin</a
-                >
-            </li>
-            <li role="presentation">
-                <a
-                    href="#pills-combo-skin"
-                    class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
-                    id="pills-combo-skin-tab"
-                    data-twe-toggle="pill"
-                    data-twe-target="#pills-combo-skin"
-                    role="tab"
-                    aria-controls="pills-combo-skin"
-                    aria-selected="false"
-                    >Combination Skin</a
-                >
-            </li>
-            <li role="presentation">
-                <a
-                    href="#pills-oily-skin"
-                    class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
-                    id="pills-oily-skin-tab"
-                    data-twe-toggle="pill"
-                    data-twe-target="#pills-oily-skin"
-                    role="tab"
-                    aria-controls="pills-oily-skin"
-                    aria-selected="false"
-                    >Oily Skin</a
-                >
-            </li>
-            <li role="presentation">
-                <a
-                    href="#pills-normal"
-                    class="pointer-events-none my-2 block rounded bg-zinc-200 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 dark:bg-neutral-600 dark:text-neutral-500"
-                    id="pills-normal-tab"
-                    data-twe-toggle="pill"
-                    data-twe-target="#pills-normal"
-                    role="tab"
-                    aria-controls="pills-normal"
-                    aria-selected="false"
-                    >Normal</a
-                >
-            </li>
-            <li role="presentation">
-                <a
-                    href="#pills-acne-prone"
-                    class="pointer-events-none my-2 block rounded bg-zinc-200 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 dark:bg-neutral-600 dark:text-neutral-500"
-                    id="pills-acne-prone-tab"
-                    data-twe-toggle="pill"
-                    data-twe-target="#pills-acne-prone"
-                    role="tab"
-                    aria-controls="pills-acne-prone"
-                    aria-selected="false"
-                    >Acne Prone</a
-                >
-            </li>
-    </ul>
-    <div class="mb-6">
-        <div
-            class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-            id="pills-dry-skin"
-            role="tabpanel"
-            aria-labelledby="pills-dry-skin-tab"
-            data-twe-tab-active>
-            Tab 1 content
+    <div class="shopbyskintype-container">
+        <div class="shopbyskintype-text-container">
+            <div class="shopbyskintype-title">{{ section.settings.title }}</div>
+            <div class="shopbyskintype-description">{{ section.settings.description }}</div>
         </div>
-        <div
-            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-            id="pills-combo-skin"
-            role="tabpanel"
-            aria-labelledby="pills-combo-skin-tab">
-            Tab 2 content
-        </div>
-        <div
-            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-            id="pills-oily-skin"
-            role="tabpanel"
-            aria-labelledby="pills-oily-skin-tab">
-            Tab 3 content
-        </div>
-        <div
-            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-            id="pills-normal"
-            role="tabpanel"
-            aria-labelledby="pills-normal-tab">
-            Tab 4 disabled
-        </div>
-        <div
-            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-            id="pills-acne-prone"
-            role="tabpanel"
-            aria-labelledby="pills-acne-prone-tab">
-            Tab 5 content
+        <ul
+            class="mb-5 flex list-none flex-col flex-wrap ps-0 md:flex-row"
+            id="pills-tab"
+            role="tablist"
+            data-twe-nav-ref>
+                <li role="presentation">
+                    <a
+                        href="#pills-dry-skin"
+                        class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
+                        id="pills-dry-skin-tab"
+                        data-twe-toggle="pill"
+                        data-twe-target="#pills-dry-skin"
+                        data-twe-nav-active
+                        role="tab"
+                        aria-controls="pills-dry-skin"
+                        aria-selected="true"
+                        >Dry Skin</a
+                    >
+                </li>
+                <li role="presentation">
+                    <a
+                        href="#pills-combo-skin"
+                        class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
+                        id="pills-combo-skin-tab"
+                        data-twe-toggle="pill"
+                        data-twe-target="#pills-combo-skin"
+                        role="tab"
+                        aria-controls="pills-combo-skin"
+                        aria-selected="false"
+                        >Combination Skin</a
+                    >
+                </li>
+                <li role="presentation">
+                    <a
+                        href="#pills-oily-skin"
+                        class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
+                        id="pills-oily-skin-tab"
+                        data-twe-toggle="pill"
+                        data-twe-target="#pills-oily-skin"
+                        role="tab"
+                        aria-controls="pills-oily-skin"
+                        aria-selected="false"
+                        >Oily Skin</a
+                    >
+                </li>
+                <li role="presentation">
+                    <a
+                        href="#pills-normal"
+                        class="pointer-events-none my-2 block rounded bg-zinc-200 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 dark:bg-neutral-600 dark:text-neutral-500"
+                        id="pills-normal-tab"
+                        data-twe-toggle="pill"
+                        data-twe-target="#pills-normal"
+                        role="tab"
+                        aria-controls="pills-normal"
+                        aria-selected="false"
+                        >Normal</a
+                    >
+                </li>
+                <li role="presentation">
+                    <a
+                        href="#pills-acne-prone"
+                        class="pointer-events-none my-2 block rounded bg-zinc-200 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 dark:bg-neutral-600 dark:text-neutral-500"
+                        id="pills-acne-prone-tab"
+                        data-twe-toggle="pill"
+                        data-twe-target="#pills-acne-prone"
+                        role="tab"
+                        aria-controls="pills-acne-prone"
+                        aria-selected="false"
+                        >Acne Prone</a
+                    >
+                </li>
+        </ul>
+        <div class="mb-6">
+            <div
+                class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="pills-dry-skin"
+                role="tabpanel"
+                aria-labelledby="pills-dry-skin-tab"
+                data-twe-tab-active>
+                Tab 1 content
+            </div>
+            <div
+                class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="pills-combo-skin"
+                role="tabpanel"
+                aria-labelledby="pills-combo-skin-tab">
+                Tab 2 content
+            </div>
+            <div
+                class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="pills-oily-skin"
+                role="tabpanel"
+                aria-labelledby="pills-oily-skin-tab">
+                Tab 3 content
+            </div>
+            <div
+                class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="pills-normal"
+                role="tabpanel"
+                aria-labelledby="pills-normal-tab">
+                Tab 4 disabled
+            </div>
+            <div
+                class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+                id="pills-acne-prone"
+                role="tabpanel"
+                aria-labelledby="pills-acne-prone-tab">
+                Tab 5 content
+            </div>
         </div>
     </div>
 </section>

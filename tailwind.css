@@ -110,6 +110,31 @@
     font-weight: 500;
 }
 
+/* Shop By Skin Type */
+.shopbyskintype-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.shopbyskintype-title {
+    font-family: Karla;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55.2px;
+    letter-spacing: -1.5px;
+    text-align: center;
+    color:#000;
+}
+.shopbyskintype-description {
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color:#000;
+}
+
+/* Multi-Row Section */
 .image-with-text__text-item {
     padding: 95px !important;
     background: #D6D9CD !important;
@@ -117,6 +142,8 @@
 .image-with-text__text-item:nth-child(1) {
     background: #CFC7C0 !important;
 }
+
+
 
 /* Media Rules */
 .slideshow__controls .slider-buttons {

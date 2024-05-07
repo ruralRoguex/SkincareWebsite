@@ -78,3 +78,11 @@
     font-size: 13px;
     font-weight: 500;
 }
+
+/* Media Rules */
+
+@media only screen and (min-width: 600px) {
+    .slideshow__controls {
+        display: none;
+    }
+}

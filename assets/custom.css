@@ -82,19 +82,13 @@
     line-height: 34.5px;
     text-align: center;
 }
-.announcement-bar {
-    background: #D5EAF0;
-}
-.utility-bar {
-    background: #D5EAF0;
-}
 .button--primary.button-black {
     background-color: #000 !important;
     border-radius: 30px;
     padding: 10px, 30px, 10px, 30px;
     gap: 10px;
     border: none !important;
-    
+
     --shadow-horizontal-offset: none !important;
     --shadow-vertical-offset: none !important;
     --shadow-blur-radius: none !important;
@@ -155,6 +149,15 @@
     font-size: 13px;
     font-weight: 500;
 }
+
+/* Media Rules */
+
+@media only screen and (min-width: 600px) {
+    .slideshow__controls {
+        display: none;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
 
     @media (min-width: 990px) {

@@ -27,6 +27,9 @@
 <div class="blog color-{{ section.settings.color_scheme }} gradient{% if section.settings.heading == blank %} no-heading{% endif %}">
   <div class="page-width-desktop isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.heading == blank -%}
+      {% if article.excerpt.size > 0 %}
+        <p class="article-excerpt">{{ article.excerpt }}</p>
+      {% endif %}
       <div class="title-wrapper-with-link{% if posts_displayed > 2 %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
         <h2
           id="SectionHeading-{{ section.id }}"
@@ -70,7 +73,6 @@
             >
               {% render 'article-card',
                 blog: section.settings.blog,
-                article: article,
                 media_aspect_ratio: 1.66,
                 show_image: section.settings.show_image,
                 show_date: section.settings.show_date,

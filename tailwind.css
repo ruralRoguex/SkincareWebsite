@@ -19,11 +19,11 @@
     right: 0 !important;
     width: 50% !important;
 }
-.banner__content {
+/* .banner__content {
     background: #F6F5EC !important;
     left: 0 !important;
     width: 50% !important;
-}
+} */
 .banner__heading {
     font-family: Karla;
     font-size: 60px;

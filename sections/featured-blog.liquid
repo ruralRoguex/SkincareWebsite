@@ -113,23 +113,23 @@
                     {%- endif -%}
                     <div class="card__content">
                       <div class="card__information">
-                        <h3 class="card__heading h2">
-                          {{ 'sections.featured_blog.onboarding_title' | t }}
-                        </h3>
                         <p class="article-card__excerpt rte-width">
                           {{ 'sections.featured_blog.onboarding_content' | t }}
                         </p>
+                        <h3 class="card__heading h2">
+                          {{ 'sections.featured_blog.onboarding_title' | t }}
+                        </h3>
                       </div>
                     </div>
                   </div>
                   <div class="card__content">
                     <div class="card__information">
-                      <h3 class="card__heading h2">
-                        {{ 'sections.featured_blog.onboarding_title' | t }}
-                      </h3>
                       <p class="article-card__excerpt rte-width">
-                        {{ 'sections.featured_blog.onboarding_content' | t }}
-                      </p>
+                          {{ 'sections.featured_blog.onboarding_content' | t }}
+                        </p>
+                        <h3 class="card__heading h2">
+                          {{ 'sections.featured_blog.onboarding_title' | t }}
+                        </h3>
                     </div>
                   </div>
                 </div>
@@ -176,10 +176,10 @@
         <a
           href="{{ section.settings.blog.url }}"
           id="ViewAll-{{ section.id }}"
-          class="blog__button button"
+          class="blog__button button button--primary button-black"
           aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}"
         >
-          {{ 'sections.featured_blog.view_all' | t }}
+          View All Posts
         </a>
       </div>
     {%- endif -%}

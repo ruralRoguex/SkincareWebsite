@@ -82,6 +82,10 @@
     line-height: 34.5px;
     text-align: center;
 }
+.utility-bar {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 .button--primary.button-black {
     background-color: #000 !important;
     border-radius: 30px;
@@ -124,6 +128,8 @@
 }
 .warranty-bar {
     background: #D6D9CD !important;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     padding: 10px;
     min-height: 95px;
     margin: 0 auto;

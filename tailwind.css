@@ -79,11 +79,11 @@
     font-weight: 500;
 }
 
-.image-with-text__text-item {
+.image-with-text__text-item:first {
     padding: 95px !important;
     background: #D6D9CD !important;
 }
-.image-with-text__text-item:nth-of-type(even) {
+.image-with-text__text-item:nth-child(2) {
     background: #CFC7C0 !important;
 }
 

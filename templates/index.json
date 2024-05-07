@@ -99,7 +99,8 @@
         "image_xytQUc": {
           "type": "image",
           "settings": {
-            "warranty_text": "Insert copy here!"
+            "image": "shopify:\/\/shop_images\/parcel.png",
+            "warranty_text": "30 Day money back guarantee ."
           }
         }
       },

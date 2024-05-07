@@ -77,6 +77,13 @@
       "settings": {
       }
     },
+    "shop_by_type_4MzebQ": {
+      "type": "shop-by-type",
+      "settings": {
+        "title": "Shop By Skin Type",
+        "description": "Short description of this collection. Do not exceed more than 2-3 lines or else it’ll look really cluttered. Insert the 3rd line in here so you can see what it looks like at full length."
+      }
+    },
     "multirow_JWxPW3": {
       "type": "multirow",
       "blocks": {
@@ -127,6 +134,7 @@
   "order": [
     "slideshow_JkXwfL",
     "four_col_page_tiles_XFmbxi",
+    "shop_by_type_4MzebQ",
     "multirow_JWxPW3"
   ]
 }

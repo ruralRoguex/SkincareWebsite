@@ -87,6 +87,10 @@
 .hidden {
     display: none !important;
 }
+.header {
+    max-height: 67px;
+    padding: 10px 3px 10px 3px !important;
+}
 .button--primary.button-black {
     background-color: #000 !important;
     border-radius: 30px;

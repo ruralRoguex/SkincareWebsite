@@ -1109,6 +1109,9 @@ video {
 .gap-5 {
   gap: 20px;
 }
+.gap-3 {
+  gap: 12px;
+}
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(8px * var(--tw-space-x-reverse));
@@ -1956,7 +1959,9 @@ video {
     display: none !important;
 }
 .warranty-bar {
-    background: #D6D9CD;
+    background: #D6D9CD !important;
+    padding: 10px;
+    min-height: 95px;
 }
 .hover\:font-bold:hover {
   font-weight: 700;

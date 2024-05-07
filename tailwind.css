@@ -6,5 +6,7 @@
     display: none !important;
 }
 .warranty-bar {
-    background: #D6D9CD;
+    background: #D6D9CD !important;
+    padding: 10px;
+    min-height: 95px;
 }

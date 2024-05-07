@@ -183,9 +183,11 @@
 /* Shop By Skin Type */
 .shopbyskintype-container {
     margin: 0 auto;
+    padding: 50px;
 }
 .shopbyskintype-text-container {
     margin: 0 auto;
+    max-width: 640px;
 }
 .shopbyskintype-title {
     font-family: Karla;

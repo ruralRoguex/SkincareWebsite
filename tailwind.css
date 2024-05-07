@@ -4,6 +4,13 @@
 .hidden {
     display: none !important;
 }
+.logo {
+    font-family: Roslindale;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34.5px;
+    text-align: center;
+}
 .button--primary {
     background-color: #000 !important;
     border-radius: 4px !important;

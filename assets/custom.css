@@ -151,13 +151,14 @@
 }
 
 /* Media Rules */
-
-@media only screen and (max-width: 650px) {
+.slideshow__controls .slider-buttons {
+    display: block !important;
+}
+@media screen and (max-width: 750px) {
     .slideshow__controls .slider-buttons {
         display: none !important;
     }
 }
-
 @media (prefers-color-scheme: dark) {
 
     @media (min-width: 990px) {

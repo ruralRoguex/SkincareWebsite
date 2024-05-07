@@ -5,15 +5,15 @@
     "header": {
       "type": "header",
       "settings": {
-        "logo_position": "middle-left",
+        "logo_position": "middle-center",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "scheme-1",
         "menu_color_scheme": "scheme-1",
-        "enable_country_selector": true,
-        "enable_language_selector": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 20,
@@ -36,17 +36,33 @@
             "text": "Summer Sale Coming Soon!",
             "link": ""
           }
+        },
+        "announcement_Chi4Ly": {
+          "type": "announcement",
+          "settings": {
+            "text": "Subscribe with Email for Updates!",
+            "link": ""
+          }
+        },
+        "announcement_rcKXEK": {
+          "type": "announcement",
+          "settings": {
+            "text": "Face Wash 20% Off Right Now",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement-bar-0",
-        "announcement_UwtEnq"
+        "announcement_UwtEnq",
+        "announcement_Chi4Ly",
+        "announcement_rcKXEK"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-5",
         "show_line_separator": true,
         "show_social": false,
-        "auto_rotate": false,
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "enable_country_selector": false,
         "enable_language_selector": false

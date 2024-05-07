@@ -2,23 +2,31 @@
 import remToPxPlugin from 'tailwindcss-rem-to-px';
 
 export default {
-    content: [
-      "./**/*.{js,json,liquid}",
-    ],
-    theme: {
-      screens: {
-        'md': '750px',
-        'lg': '990px',
-      },
-      extend: {
-        fontFamily: {
-          'heading': 'var(--font-heading-family)'
-        },
+  prefix: 'tw-',
+  important: true,
+  content: [
+    "./**/*.{js,json,liquid}",
+    "./node_modules/tw-elements/js/**/*.js",
+  ],
+  theme: {
+    screens: {
+      'md': '750px',
+      'lg': '1440px',
+    },
+    extend: {
+      fontFamily: {
+        'heading': 'var(--font-heading-family)',
+        // 'roslindale':["Roslindale", "sans-serif"],
       },
     },
-    plugins: [
-      remToPxPlugin({
-        baseFontSize: 16,
-      })
-    ],
-  }
+  },
+  corePlugins: {
+    preflight: false,
+ },
+  plugins: [
+    require("./node_modules/tw-elements/plugin.cjs"),
+    remToPxPlugin({
+      baseFontSize: 16,
+    })
+  ]
+}

@@ -1,0 +1,59 @@
+<section id="{{ 'home-' | append: section.id }}">
+    <div class="warranty-bar px-5 py-5 2xl:px-20">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 py-5 gap-5">
+            {% for block in section.blocks %}
+                {% if block.settings.image != blank %}
+                <div class="warranty-image-container">
+                    <img 
+                        class="warranty-image"
+                        src="{{ block.settings.image | image_url }}" 
+                        loading="lazy" 
+                        height="43px" 
+                        width="43px"
+                    />
+                </div>
+                <div class="warranty-text-container">
+                    <div class="warranty-text"> {{ block.settings.warranty_text }}</div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+   "name": "4 Column Warranty Images",
+   "blocks": [{
+         "type": "image",
+         "name": "Warranty Section",
+         "settings": [{
+               "type": "header",
+               "content": "Warranty Image"
+            },
+            {
+               "type": "image_picker",
+               "id": "image",
+               "label": "Image"
+            },
+            {
+               "type": "header",
+               "content": "Warranty Lines"
+            },
+            {
+               "type": "text",
+               "id": "warranty_text",
+               "label": "Warranty Line",
+               "default": "Insert copy here!"
+            }
+         ]
+      }
+   ],
+   "presets": [{
+      "name": "4 Column Warranty Images",
+      "category": "4 Column Warranty Images",
+      "blocks": [{
+         "type": "image"
+      }]
+   }]
+}
+{% endschema %}

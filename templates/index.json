@@ -1,1 +1,140 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Browse our latest products","heading_size":"h0"}},"button":{"type":"buttons","settings":{"button_label_1":"Shop all","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","button"],"settings":{"image_overlay_opacity":40,"image_height":"large","desktop_content_position":"bottom-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"featured_collection":{"type":"featured-collection","settings":{"title":"Featured products","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"all","products_to_show":8,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"scheme-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":false,"padding_top":44,"padding_bottom":36}}},"order":["image_banner","featured_collection"]}
+{
+  "sections": {
+    "slideshow_JkXwfL": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_kXr8mU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero-1.jpg",
+            "heading": "INSERT YOUR TAGLINE OR HEADING HERE",
+            "heading_size": "h1",
+            "subheading": "Add description that elaborates on the tagline above. This is the second line, please don't write more than that.",
+            "button_label": "Shop Now",
+            "link": "shopify:\/\/products\/delicate-sun",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_kXr8mU"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "four_col_page_tiles_XFmbxi": {
+      "type": "four-col-page-tiles",
+      "blocks": {
+        "image_LQJHbe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/parcel.png",
+            "warranty_text": "Hassle Free Return Policy. Insert Your Copy Here."
+          }
+        },
+        "image_cmQwRp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/parcel.png",
+            "warranty_text": "Free Shipping on orders over $XXX"
+          }
+        },
+        "image_GpLjWK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/parcel.png",
+            "warranty_text": "Secure Checkout . Insert more copy here"
+          }
+        },
+        "image_xytQUc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/parcel.png",
+            "warranty_text": "30 Day money back guarantee ."
+          }
+        }
+      },
+      "block_order": [
+        "image_LQJHbe",
+        "image_cmQwRp",
+        "image_GpLjWK",
+        "image_xytQUc"
+      ],
+      "settings": {
+      }
+    },
+    "shop_by_type_4MzebQ": {
+      "type": "shop-by-type",
+      "settings": {
+        "title": "Shop By Skin Type",
+        "description": "Short description of this collection. Do not exceed more than 2-3 lines or else it’ll look really cluttered. Insert the 3rd line in here so you can see what it looks like at full length."
+      }
+    },
+    "multirow_JWxPW3": {
+      "type": "multirow",
+      "blocks": {
+        "row_kh4iFX": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hand_cream.jpg",
+            "caption": "",
+            "heading": "Featured Collection Name in Here",
+            "text": "<p>Short description of this collection. Do not exceed more than 2-3 lines or else it’ll look really cluttered. Insert the 3rd line in here so you can see what it looks like at full length.<\/p>",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/sample-collection-3"
+          }
+        },
+        "row_HVihjB": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/potion.jpg",
+            "caption": "",
+            "heading": "Featured Collection Name in Here",
+            "text": "<p>Short description of this collection. Do not exceed more than 2-3 lines or else it’ll look really cluttered. Insert the 3rd line in here so you can see what it looks like at full length.<\/p>",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/misty-lake"
+          }
+        }
+      },
+      "block_order": [
+        "row_kh4iFX",
+        "row_HVihjB"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h0",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "scheme-1",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "slideshow_JkXwfL",
+    "four_col_page_tiles_XFmbxi",
+    "shop_by_type_4MzebQ",
+    "multirow_JWxPW3"
+  ]
+}

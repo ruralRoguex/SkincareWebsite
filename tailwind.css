@@ -11,6 +11,15 @@
     line-height: 34.5px;
     text-align: center;
 }
+.list-menu__item {
+    font-family: Karla;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+}
 .utility-bar {
     border-top: 1px solid black;
     border-bottom: 1px solid black;

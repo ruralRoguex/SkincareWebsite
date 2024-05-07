@@ -115,8 +115,7 @@
     margin: 0 auto;
 }
 .shopbyskintype-text-container {
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
 }
 .shopbyskintype-title {
     font-family: Karla;

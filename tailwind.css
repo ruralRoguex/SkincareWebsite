@@ -11,7 +11,7 @@
     line-height: 34.5px;
     text-align: center;
 }
-.button--primary {
+.button--primary.button-black {
     background-color: #000 !important;
     border-radius: 4px !important;
 }

@@ -23,7 +23,7 @@
       assign ratio = media_aspect_ratio
     endif
   -%}
-  <div class="article-card-wrapper card-wrapper underline-links-hover">
+  <div class="article-card-wrapper card-wrapper">
     {% comment %} <article aria-labelledby="Article-{{ article.id }}"> {% endcomment %}
     <div
       class="
@@ -87,9 +87,9 @@
               {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
                 <p class="article-card__excerpt rte-width">
                   {%- if article.excerpt.size > 0 -%}
-                    {{ article.excerpt | strip_html | truncate: 25, '' }}
+                    {{ article.excerpt | strip_html | truncate: 23, '' }}
                   {%- else -%}
-                    {{ article.content | strip_html | truncate: 25, '' }}
+                    {{ article.content | strip_html | truncate: 23, '' }}
                   {%- endif -%}
                 </p>
               {%- endif -%}
@@ -98,6 +98,9 @@
                   {{ article.title | truncate: 50 | escape }}
                 </a>
               </h3>
+              <div>
+                <p class="readmore-btn underline-links-hover">Read More</p>
+              </div>
               <div class="article-card__footer">
                 {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                   <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
@@ -126,9 +129,9 @@
             {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
               <p class="article-card__excerpt rte-width">
                 {%- if article.excerpt.size > 0 -%}
-                  {{ article.excerpt | strip_html | truncate: 25, '' }}
+                  {{ article.excerpt | strip_html | truncate: 23, '' }}
                 {%- else -%}
-                  {{ article.content | strip_html | truncate: 25, '' }}
+                  {{ article.content | strip_html | truncate: 23, '' }}
                 {%- endif -%}
               </p>
             {%- endif -%}
@@ -137,6 +140,9 @@
               {{ article.title | truncate: 50 | escape }}
             </a>
           </h3>
+          <div>
+            <p class="readmore-btn underline-links-hover">Read More</p>
+          </div>
             <div class="article-card__footer">
               {%- if article.comments_count > 0 and blog.comments_enabled? -%}
                 <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>

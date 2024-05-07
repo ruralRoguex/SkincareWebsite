@@ -82,12 +82,21 @@
     line-height: 34.5px;
     text-align: center;
 }
+.announcement-bar {
+    background: #D5EAF0;
+}
 .button--primary.button-black {
     background-color: #000 !important;
-    border-radius: 30px !important;
+    border-radius: 30px;
     padding: 10px, 30px, 10px, 30px;
     gap: 10px;
-    border-opacity: none !important;
+    --shadow-horizontal-offset: none !important;
+    --shadow-vertical-offset: none !important;
+    --shadow-blur-radius: none !important;
+    --shadow-opacity: none !important;
+    --shadow-visible: none !important;
+    --border-offset: none !important;
+    --border-opacity: none !important;
     border: none !important;
 }
 .banner__media {

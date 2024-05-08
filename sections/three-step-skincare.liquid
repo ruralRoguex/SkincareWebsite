@@ -1,0 +1,64 @@
+<section id="{{ 'home-' | append: section.id }}">
+    <div class="flex flex-row">
+        <div class="basis-1/4">
+            <div class="tagline">{{ section.settings.tagline }}</div>
+            <div class="heading">{{ section.settings.heading }}</div>
+            <div class="discription">{{ section.settings.description }}</div>
+            <a role="link" href="#" class="button button--primary button-black">Shop Now</a>  
+        </div>
+        <div class="basis-1/4 cream-card">
+            <image></image>
+            <div class="tagline"></div>
+            <div class="description"></div>
+        </div>
+        <div class="basis-1/4 cream-card">
+            <image></image>
+            <div class="tagline"></div>
+            <div class="description"></div>
+        </div>
+        <div class="basis-1/4 cream-card">
+            <image></image>
+            <div class="tagline"></div>
+            <div class="description"></div>
+        </div>
+    </div>
+</section>
+{% schema %}
+    {
+      "name": "Three Step Skin Care",
+      "tag": "section",
+      "class": "shop-by-type",
+      "settings": [
+        {
+          "type": "text",
+          "label": "tagline",
+          "id": "tagline",
+          "placeholder": "Insert tagline here"
+        },
+        {
+          "type": "text",
+          "label": "heading",
+          "id": "heading",
+          "placeholder": "Enter heading here"
+        },
+        {
+          "type": "text",
+          "label": "description",
+          "id": "description",
+          "placeholder": "Enter description here, 2-3 lines only."
+        }
+      ],
+      "blocks": [],
+      "presets": [
+        {
+          "name": "Three Step Skin Care"
+        }
+      ]
+    }
+{% endschema %}
+    
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

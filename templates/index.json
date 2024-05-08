@@ -25,7 +25,6 @@
       "block_order": [
         "slide_kXr8mU"
       ],
-      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -75,13 +74,11 @@
         "image_GpLjWK",
         "image_xytQUc"
       ],
-      "disabled": true,
       "settings": {
       }
     },
     "shop_by_type_4MzebQ": {
       "type": "shop-by-type",
-      "disabled": true,
       "settings": {
         "title": "Shop By Skin Type",
         "description": "Short description of this collection. Do not exceed more than 2-3 lines or else it’ll look really cluttered. Insert the 3rd line in here so you can see what it looks like at full length."
@@ -117,7 +114,6 @@
         "row_kh4iFX",
         "row_HVihjB"
       ],
-      "disabled": true,
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",

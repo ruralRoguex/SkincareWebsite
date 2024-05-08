@@ -130,6 +130,14 @@
         "padding_bottom": 0
       }
     },
+    "three_step_skincare_DHHFnd": {
+      "type": "three-step-skincare",
+      "settings": {
+        "tagline": "Little Tagline Here",
+        "heading": "Our 3-Step Skincare System",
+        "description": "Short description of this collection. Do not exceed more than 2-3 lines or else it’ll look really cluttered."
+      }
+    },
     "featured_collection_NGKcU7": {
       "type": "featured-collection",
       "disabled": true,
@@ -192,6 +200,7 @@
     "four_col_page_tiles_XFmbxi",
     "shop_by_type_4MzebQ",
     "multirow_JWxPW3",
+    "three_step_skincare_DHHFnd",
     "featured_collection_NGKcU7",
     "review_overflow_X3Pc96",
     "featured_blog_L6qpcC"

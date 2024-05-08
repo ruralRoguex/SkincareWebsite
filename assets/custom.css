@@ -1,84 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
-input[type="range"]::-webkit-slider-thumb{
-    height: 1rem;
-    width: 1rem;
-    background: #3B71CA;
-    border-radius: 9999px;
-    border: 0;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    cursor: pointer;
-}
-.dark input[type="range"]::-webkit-slider-thumb{
-    background: #8FAEE0;
-}
-input[type="range"]:disabled::-webkit-slider-thumb{
-    background: #a3a3a3;
-}
-input[type="range"]:disabled:focus::-webkit-slider-thumb{
-    background: #a3a3a3;
-}
-input[type="range"]:disabled:active::-webkit-slider-thumb{
-    background: #a3a3a3;
-}
-.dark input[type="range"]:disabled::-webkit-slider-thumb{
-    background: #737373;
-}
-.dark input[type="range"]:disabled:focus::-webkit-slider-thumb{
-    background: #737373;
-}
-.dark input[type="range"]:disabled:active::-webkit-slider-thumb{
-    background: #737373;
-}
-input[type="range"]::-moz-range-thumb{
-    height: 1rem;
-    width: 1rem;
-    background: #3B71CA;
-    border-radius: 9999px;
-    border: 0;
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    cursor: pointer;
-}
-.dark input[type="range"]::-moz-range-thumb{
-    background: #8FAEE0;
-}
-input[type="range"]:disabled::-moz-range-thumb{
-    background: #a3a3a3;
-}
-.dark input[type="range"]:disabled::-moz-range-thumb{
-    background: #737373;
-}
-input[type="range"]::-moz-range-progress{
-    background: #3061AF;
-}
-input[type="range"]::-ms-fill-lower{
-    background: #3061AF;
-}
-.dark input[type="range"]::-moz-range-progress{
-    background: #6590D5;
-}
-.dark input[type="range"]::-ms-fill-lower{
-    background: #6590D5;
-}
-input[type="range"]:focus{
-    outline: none;
-}
-input[type="range"]:focus::-webkit-slider-thumb{
-    background: #3061AF;
-}
-input[type="range"]:active::-webkit-slider-thumb{
-    background: #285192;
-}
-.dark input[type="range"]:focus::-webkit-slider-thumb{
-    background: #6590D5;
-}
-.dark input[type="range"]:active::-webkit-slider-thumb{
-    background: #3061AF;
-}
 *, ::before, ::after{
     --tw-border-spacing-x: 0;
     --tw-border-spacing-y: 0;
@@ -400,6 +321,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
+    list-style-type: none;
 }
 /* Multi-Row Section */
 .image-with-text__grid {

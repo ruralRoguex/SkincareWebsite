@@ -6,7 +6,6 @@ export default {
   important: true,
   content: [
     "./**/*.{js,json,liquid}",
-    "./node_modules/tw-elements/js/**/*.js",
   ],
   theme: {
     screens: {
@@ -16,7 +15,6 @@ export default {
     extend: {
       fontFamily: {
         'heading': 'var(--font-heading-family)',
-        // 'roslindale':["Roslindale", "sans-serif"],
       },
     },
   },
@@ -24,7 +22,6 @@ export default {
     preflight: false,
  },
   plugins: [
-    require("./node_modules/tw-elements/plugin.cjs"),
     remToPxPlugin({
       baseFontSize: 16,
     })

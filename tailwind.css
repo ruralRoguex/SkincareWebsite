@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /*********************************
 * Author: Blake Green
@@ -155,6 +155,7 @@
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
+    list-style-type: none;
 }
 
 /* Multi-Row Section */

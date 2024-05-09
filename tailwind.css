@@ -169,13 +169,12 @@
 .image-with-text__text-item {
     padding: 95px;
 }
-.image-with-text__grid .child:first-child {
+.image-with-text__grid .child:nth-child(odd){
 background-color: #D6D9CD !important;
 }
 .image-with-text__grid .child:nth-child(even) {
 background-color: #CFC7C0 !important;
 }
-
 .image-with-text__heading {
     font-family: Karla;
     font-size: 48px;

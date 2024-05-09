@@ -16,14 +16,14 @@
           "type": "link_list",
           "settings": {
             "heading": "Footer Title Here",
-            "menu": "footer"
+            "menu": "main-menu"
           }
         },
         "link_list_mQNcBR": {
           "type": "link_list",
           "settings": {
             "heading": "Footer Title Here",
-            "menu": "footer"
+            "menu": "promo-menu"
           }
         },
         "text_yKUG7B": {

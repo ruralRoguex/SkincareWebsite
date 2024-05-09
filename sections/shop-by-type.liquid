@@ -89,20 +89,10 @@
 
                 WE ARE RIGHT HERE!!!!!! 
 
-
-                {%- assign product = all_products[handle product] -%}
-
                 {% assign collection_handle = 'dry-skin' %}
                 {% for product in collections[collection_handle].products %}
                     <p>{{ product.title }}</p>
                 {% endfor %}
-
-                {% for product in collection.products %}
-                    {% if product.tags contains 'dry-skin' %}
-                        <p>{{ product.title }}</p>
-                    {% endif %}
-                {% endfor %}
-
 
             </div>
             <div

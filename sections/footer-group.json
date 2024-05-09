@@ -4,6 +4,34 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "link_list_g63pHn": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Footer Title Here",
+            "menu": "footer"
+          }
+        },
+        "link_list_rntBBA": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Footer Title Here",
+            "menu": "footer"
+          }
+        },
+        "link_list_mQNcBR": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Footer Title Here",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_g63pHn",
+        "link_list_rntBBA",
+        "link_list_mQNcBR"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,

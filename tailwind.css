@@ -301,5 +301,6 @@ background-color: #CFC7C0 !important;
 .field__input:focus {
     box-shadow: none !important;
 }
-/* Media Rules */
-
+.newsletter-form__field-wrapper &.field {
+    min-width: 520px;
+}

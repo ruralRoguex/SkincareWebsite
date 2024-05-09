@@ -465,7 +465,9 @@ background-color: #CFC7C0 !important;
 .field__input:focus {
     box-shadow: none !important;
 }
-/* Media Rules */
+.newsletter-form__field-wrapper &.field {
+    min-width: 520px;
+}
 @media (prefers-color-scheme: dark){
     @media (min-width: 1440px){
         .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
@@ -473,4 +475,3 @@ background-color: #CFC7C0 !important;
         }
     }
 }
-

@@ -169,11 +169,10 @@
 .image-with-text__text-item {
     padding: 95px;
 }
-
-.image-with-text__grid .child:nth-child(odd) {
+.image-with-text__grid .child:first-child {
 background-color: #D6D9CD !important;
 }
-.image-with-text__grid .child:nth-child(even) {
+.image-with-text__grid .child:nth-last-child() {
 background-color: #CFC7C0 !important;
 }
 
@@ -200,9 +199,10 @@ background-color: #CFC7C0 !important;
     font-family: Inconsolata;
     font-size: 13px;
     font-weight: 500;
-    line-height: 19.5px;
+    line-height: 1.5px;
     letter-spacing: 1px;
     text-align: left;
+    padding-top: 20px;
 }
 .readmore-btn {
     font-family: Inconsolata;

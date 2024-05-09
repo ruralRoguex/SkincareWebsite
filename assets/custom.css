@@ -428,6 +428,12 @@ background-color: #CFC7C0 !important;
     line-height: 24px;
     text-align: left;
 }
+.black-dots {
+    padding: 15px 0px;
+}
+.black-dot {
+    padding-right: 5px;
+}
 /* Media Rules */
 @media (prefers-color-scheme: dark){
     @media (min-width: 1440px){

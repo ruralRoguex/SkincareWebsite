@@ -204,10 +204,14 @@
 .shopbyskintype-container ul {
     display: flex;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     list-style-type: none;
 }
+.shopbyskintype-container ul li {
+    padding-right: 40px;
+}
+
 
 /* Multi-Row Section */
 .image-with-text__grid {

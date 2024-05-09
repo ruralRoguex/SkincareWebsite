@@ -337,6 +337,15 @@
 .image-with-text__grid {
     background: #CFC7C0 !important;
 }
+.parentOdd {
+    background-color: #D6D9CD !important;
+}
+.parentOdd.child:nth-child(odd) {
+background-color: #D6D9CD !important;
+}
+.parentOdd.child:nth-child(even) {
+background-color: #CFC7C0 !important;
+}
 .image-with-text__heading {
     font-family: Karla;
     font-size: 48px;

@@ -408,9 +408,25 @@ background-color: #CFC7C0 !important;
     justify-content: center;
     align-items: flex-start;
 }
+.footer-block__heading {
+    font-family: Karla;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -0.5px;
+    text-align: left;
+}
 .footer-block--menu {
     max-width: 200px !important;
     margin-right: 50px !important;
+}
+.footer-block__details-content p {
+    max-width: 520px;
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 /* Media Rules */
 @media (prefers-color-scheme: dark){

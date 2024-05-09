@@ -223,6 +223,7 @@
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
+    position: relative;
 
 
     --shadow-horizontal-offset: none !important;

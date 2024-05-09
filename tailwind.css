@@ -164,23 +164,16 @@
 /* Multi-Row Section */
 .image-with-text__grid {
     border-bottom: 1px solid black;
+    background-color: transparent !important;
 }
 .image-with-text__text-item {
     padding: 95px;
 }
-/*
-.image-with-text__grid {
-    background: #CFC7C0 !important;
-} */
 
-
-.parentOdd {
-    background-color: transparent !important;
-}
-.parentOdd.child:nth-child(odd) {
+.image-with-text__grid .child:nth-child(odd) {
 background-color: #D6D9CD !important;
 }
-.parentOdd.child:nth-child(even) {
+.image-with-text__grid .child:nth-child(even) {
 background-color: #CFC7C0 !important;
 }
 

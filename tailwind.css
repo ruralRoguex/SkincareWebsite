@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
-@tailwind components;
-@tailwind utilities;
+@import "./node_modules/tailwindcss/base";
+@import "./node_modules/tailwindcss/components";
+@import "./node_modules/tailwindcss/utilities";
 
 /*********************************
 * Author: Blake Green
@@ -17,7 +18,7 @@
     src: url("./assets/Roslindale-TextBold-Testing.woff");
 } */
 
-/* CSS Overwrites */
+/* CSS Overrides */
 .hidden {
     display: none !important;
 }
@@ -25,13 +26,61 @@
     max-height: 67px;
     padding: 10px 3px 10px 3px !important;
 }
+.button {
+    font-family: Inconsolata;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+}
 .button--primary.button-black {
     background-color: #000 !important;
+    color: #fff;;
     border-radius: 30px;
     text-transform: uppercase;
     padding: 10px, 30px, 10px, 30px;
     gap: 10px;
     border: none !important;
+
+    --shadow-horizontal-offset: none !important;
+    --shadow-vertical-offset: none !important;
+    --shadow-blur-radius: none !important;
+    --shadow-opacity: none !important;
+    --shadow-visible: none !important;
+    --border-offset: none !important;
+    --border-opacity: none !important;
+}
+.button--primary.button-white {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-radius: 30px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    padding: 10px, 30px, 10px, 30px;
+    gap: 10px;
+
+    --shadow-horizontal-offset: none !important;
+    --shadow-vertical-offset: none !important;
+    --shadow-blur-radius: none !important;
+    --shadow-opacity: none !important;
+    --shadow-visible: none !important;
+    --border-offset: none !important;
+    --border-opacity: none !important;
+}
+.button--primary.button-submit {
+    margin-bottom: 1rem;
+    background-color: #000 !important;
+    color: #fff;
+    text-transform: uppercase;
+    gap: 10px;
+    font-family: Inconsolata;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+
 
     --shadow-horizontal-offset: none !important;
     --shadow-vertical-offset: none !important;
@@ -67,11 +116,14 @@
 }
 
 /* Slideshow */
+#Slide-template--17039269462073__slideshow_JkXwfL-1 {
+    background-color: #F6F5EC;
+}
 .banner__media {
     right: 0 !important;
     width: 50% !important;
 }
-.banner__content {
+.slideshow__text {
     background: transparent !important;
 }
 .banner__heading {
@@ -149,17 +201,31 @@
     text-align: center;
     color:#000;
 }
+.shopbyskintype-container ul {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.shopbyskintype-container ul li {
+    padding-right: 40px;
+}
+
 
 /* Multi-Row Section */
 .image-with-text__grid {
     border-bottom: 1px solid black;
+    background-color: transparent !important;
 }
 .image-with-text__text-item {
-    padding: 95px !important;
-    background: #D6D9CD !important;
+    padding: 95px;
 }
-.image-with-text__text-item:nth-child(1) {
-    background: #CFC7C0 !important;
+.image-with-text__grid .child:nth-child(odd){
+background-color: #D6D9CD !important;
+}
+.image-with-text__grid .child:nth-child(even) {
+background-color: #CFC7C0 !important;
 }
 .image-with-text__heading {
     font-family: Karla;
@@ -184,9 +250,10 @@
     font-family: Inconsolata;
     font-size: 13px;
     font-weight: 500;
-    line-height: 19.5px;
+    line-height: 1.5px;
     letter-spacing: 1px;
     text-align: left;
+    padding-top: 20px;
 }
 .readmore-btn {
     font-family: Inconsolata;
@@ -198,8 +265,6 @@
     text-transform: uppercase;
     text-decoration: underline;
 }
-
-/* Media Rules */
 .article-card .card__heading {
     font-family: Karla;
     font-size: 32px;
@@ -208,11 +273,65 @@
     letter-spacing: -0.5px;
     text-align: left;
 }
-.slideshow__controls .slider-buttons {
-    display: none !important;
+.blog__posts .article-card .card__information {
+    padding: 0 0 0 0 !important;
 }
-@media screen and (max-width: 749px) {
-    .slideshow__controls .slider-buttons {
-        display: block !important;
+@media screen and (min-width: 750px) {
+    .blog__posts .grid {
+        column-gap: 70px !important;
     }
+}
+
+/* Footer */
+.footer {
+    border: none !important;
+}
+.footer__content-bottom {
+    border: none !important;
+}
+.footer__blocks-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer-block__heading {
+    font-family: Karla;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -0.5px;
+    text-align: left;
+}
+.footer-block--menu {
+    max-width: 200px !important;
+    margin-right: 50px !important;
+}
+.footer-block__details-content p {
+    max-width: 520px;
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.black-dots {
+    padding: 15px 0px;
+}
+.black-dot {
+    padding-right: 5px;
+}
+.newsletter {
+    font-family: Inconsolata;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.field__input:focus {
+    box-shadow: none !important;
+}
+.newsletter-form__field-wrapper &.field {
+    min-width: 520px;
 }

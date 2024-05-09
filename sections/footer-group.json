@@ -4,19 +4,64 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "link_list_g63pHn": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Footer Title Here",
+            "menu": "footer"
+          }
+        },
+        "link_list_rntBBA": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Footer Title Here",
+            "menu": "main-menu"
+          }
+        },
+        "link_list_mQNcBR": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Footer Title Here",
+            "menu": "promo-menu"
+          }
+        },
+        "text_yKUG7B": {
+          "type": "text",
+          "settings": {
+            "heading": "Sign Up to Stay in Touch Newsletter Here",
+            "subtext": "<p>This section looks the best when you keep the copy to 2 lines, any more than that then it looks messy.<\/p>"
+          }
+        },
+        "image_PebcLF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skincare_websiteskincare-footer-logo.png",
+            "image_width": 550,
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "link_list_g63pHn",
+        "link_list_rntBBA",
+        "link_list_mQNcBR",
+        "text_yKUG7B",
+        "image_PebcLF"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "",
         "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
-        "show_policy": false,
-        "margin_top": 0,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "show_policy": true,
+        "margin_top": 40,
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },

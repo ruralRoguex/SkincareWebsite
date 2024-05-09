@@ -130,6 +130,54 @@
         "padding_bottom": 0
       }
     },
+    "three_step_skincare_DHHFnd": {
+      "type": "three-step-skincare",
+      "disabled": true,
+      "settings": {
+        "tagline": "Little Tagline Here",
+        "heading": "Our 3-Step Skincare System",
+        "description": "Short description of this collection. Do not exceed more than 2-3 lines or else it’ll look really cluttered."
+      }
+    },
+    "featured_collection_NGKcU7": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured Collection Name Here",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "catalytic-converters-acura",
+        "products_to_show": 2,
+        "columns_desktop": 1,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "review_overflow_X3Pc96": {
+      "type": "review-overflow",
+      "disabled": true,
+      "settings": {
+        "turn_on_reviews_section": true,
+        "list_of_products_with_reviews": [
+
+        ]
+      }
+    },
     "featured_blog_L6qpcC": {
       "type": "featured-blog",
       "settings": {
@@ -153,6 +201,9 @@
     "four_col_page_tiles_XFmbxi",
     "shop_by_type_4MzebQ",
     "multirow_JWxPW3",
+    "three_step_skincare_DHHFnd",
+    "featured_collection_NGKcU7",
+    "review_overflow_X3Pc96",
     "featured_blog_L6qpcC"
   ]
 }

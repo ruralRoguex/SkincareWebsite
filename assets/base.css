@@ -1588,11 +1588,11 @@ details[open] > .share-button__fallback {
   pointer-events: none;
   content: '';
   position: absolute;
-  top: var(--inputs-border-width);
+  /* top: var(--inputs-border-width); */
   right: var(--inputs-border-width);
   bottom: var(--inputs-border-width);
   left: var(--inputs-border-width);
-  border: 0.1rem solid transparent;
+  /* border: 0.1rem solid transparent; */
   border-radius: var(--inputs-radius);
   box-shadow: 0 0 0 var(--inputs-border-width) rgba(var(--color-foreground), var(--inputs-border-opacity));
   transition: box-shadow var(--duration-short) ease;
@@ -1765,11 +1765,11 @@ details[open] > .share-button__fallback {
   width: 2.5rem;
 }
 
-.field__input:-webkit-autofill ~ .field__button,
+/* .field__input:-webkit-autofill ~ .field__button,
 .field__input:-webkit-autofill ~ .field__label,
 .customer .field input:-webkit-autofill ~ label {
   color: rgb(0, 0, 0);
-}
+} */
 
 /* Text area */
 

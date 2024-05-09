@@ -1,3 +1,5 @@
+<script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+
 <section id="{{ 'home-' | append: section.id }}">
     <div class="shopbyskintype-container">
         <div class="shopbyskintype-text-container">
@@ -11,66 +13,66 @@
             data-twe-nav-ref>
                 <li role="presentation">
                     <a
-                        href="#pills-dry-skin"
-                        class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
-                        id="pills-dry-skin-tab"
+                        href="#dry-skin"
+                        class="button button--primary button-black pointer-events"
+                        id="dry-skin-tab"
                         data-twe-toggle="pill"
-                        data-twe-target="#pills-dry-skin"
+                        data-twe-target="#dry-skin"
                         data-twe-nav-active
                         role="tab"
-                        aria-controls="pills-dry-skin"
+                        aria-controls="dry-skin"
                         aria-selected="true"
                         >Dry Skin</a
                     >
                 </li>
                 <li role="presentation">
                     <a
-                        href="#pills-combo-skin"
-                        class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
-                        id="pills-combo-skin-tab"
+                        href="#combo-skin"
+                        class="button button--primary button-white pointer-events"
+                        id="combo-skin-tab"
                         data-twe-toggle="pill"
-                        data-twe-target="#pills-combo-skin"
+                        data-twe-target="#combo-skin"
                         role="tab"
-                        aria-controls="pills-combo-skin"
+                        aria-controls="combo-skin"
                         aria-selected="false"
                         >Combination Skin</a
                     >
                 </li>
                 <li role="presentation">
                     <a
-                        href="#pills-oily-skin"
-                        class="my-2 block rounded bg-zinc-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[twe-nav-active]:!bg-primary-100 data-[twe-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white/50 dark:data-[twe-nav-active]:!bg-slate-900 dark:data-[twe-nav-active]:text-primary-500 md:me-4"
-                        id="pills-oily-skin-tab"
+                        href="#oily-skin"
+                        class="button button--primary button-white pointer-events"
+                        id="oily-skin-tab"
                         data-twe-toggle="pill"
-                        data-twe-target="#pills-oily-skin"
+                        data-twe-target="#oily-skin"
                         role="tab"
-                        aria-controls="pills-oily-skin"
+                        aria-controls="oily-skin"
                         aria-selected="false"
                         >Oily Skin</a
                     >
                 </li>
                 <li role="presentation">
                     <a
-                        href="#pills-normal"
-                        class="pointer-events-none my-2 block rounded bg-zinc-200 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 dark:bg-neutral-600 dark:text-neutral-500"
-                        id="pills-normal-tab"
+                        href="#normal"
+                        class="button button--primary button-white pointer-events"
+                        id="normal-tab"
                         data-twe-toggle="pill"
-                        data-twe-target="#pills-normal"
+                        data-twe-target="#normal"
                         role="tab"
-                        aria-controls="pills-normal"
+                        aria-controls="normal"
                         aria-selected="false"
                         >Normal</a
                     >
                 </li>
                 <li role="presentation">
                     <a
-                        href="#pills-acne-prone"
-                        class="pointer-events-none my-2 block rounded bg-zinc-200 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 dark:bg-neutral-600 dark:text-neutral-500"
-                        id="pills-acne-prone-tab"
+                        href="#acne-prone"
+                        class="button button--primary button-white pointer-events"
+                        id="acne-prone-tab"
                         data-twe-toggle="pill"
-                        data-twe-target="#pills-acne-prone"
+                        data-twe-target="#acne-prone"
                         role="tab"
-                        aria-controls="pills-acne-prone"
+                        aria-controls="acne-prone"
                         aria-selected="false"
                         >Acne Prone</a
                     >
@@ -78,44 +80,102 @@
         </ul>
         <div class="mb-6">
             <div
-                class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                id="pills-dry-skin"
+                class="data-[twe-tab-active]:block"
+                id="dry-skin"
                 role="tabpanel"
-                aria-labelledby="pills-dry-skin-tab"
+                aria-labelledby="dry-skin-tab"
                 data-twe-tab-active>
-                Tab 1 content
+
+
+                WE ARE RIGHT HERE!!!!!! 
+
+
+                {%- assign product = all_products[handle product] -%}
+
+                {% assign collection_handle = 'dry-skin' %}
+                {% for product in collections[collection_handle].products %}
+                    <p>{{ product.title }}</p>
+                {% endfor %}
+
+                {% for product in collection.products %}
+                    {% if product.tags contains 'dry-skin' %}
+                        <p>{{ product.title }}</p>
+                    {% endif %}
+                {% endfor %}
+
+
             </div>
             <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                id="pills-combo-skin"
+                id="combo-skin"
                 role="tabpanel"
-                aria-labelledby="pills-combo-skin-tab">
+                aria-labelledby="combo-skin-tab">
                 Tab 2 content
             </div>
             <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                id="pills-oily-skin"
+                id="oily-skin"
                 role="tabpanel"
-                aria-labelledby="pills-oily-skin-tab">
+                aria-labelledby="oily-skin-tab">
                 Tab 3 content
             </div>
             <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                id="pills-normal"
+                id="normal"
                 role="tabpanel"
-                aria-labelledby="pills-normal-tab">
+                aria-labelledby="normal-tab">
                 Tab 4 disabled
             </div>
             <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                id="pills-acne-prone"
+                id="acne-prone"
                 role="tabpanel"
-                aria-labelledby="pills-acne-prone-tab">
+                aria-labelledby="acne-prone-tab">
                 Tab 5 content
             </div>
         </div>
     </div>
 </section>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    "name": {{ product.title | json }},
+    "url": {{ request.origin | append: product.url | json }},
+    "description": {{ product.description | strip_html | json }},
+    {% if product.selected_or_first_available_variant.sku != blank -%}
+      "sku": {{ product.selected_or_first_available_variant.sku | json }},
+    {%- endif %}
+    "brand": {
+      "@type": "Brand",
+      "name": {{ product.vendor | json }}
+    },
+    "offers": [
+      {%- for variant in product.variants -%}
+        {
+          "@type" : "Offer",
+          {%- if variant.sku != blank -%}
+            "sku": {{ variant.sku | json }},
+          {%- endif -%}
+          {%- if variant.barcode.size == 12 -%}
+              "gtin12": {{ variant.barcode | json }},
+          {%- endif -%}
+          {%- if variant.barcode.size == 13 -%}
+            "gtin13": {{ variant.barcode | json }},
+          {%- endif -%}
+          {%- if variant.barcode.size == 14 -%}
+            "gtin14": {{ variant.barcode | json }},
+          {%- endif -%}
+          "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+          "price" : {{ variant.price | divided_by: 100.00 | json }},
+          "priceCurrency" : {{ cart.currency.iso_code | json }},
+          "url" : {{ request.origin | append: variant.url | json }}
+        }{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    ]
+  }
+</script>
+
 {% schema %}
     {
       "name": "Shop By Skin Type",
@@ -142,10 +202,10 @@
         }
       ]
     }
-    {% endschema %}
+{% endschema %}
     
-    {% stylesheet %}
-    {% endstylesheet %}
-    
-    {% javascript %}
-    {% endjavascript %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

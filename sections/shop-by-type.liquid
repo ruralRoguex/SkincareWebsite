@@ -96,6 +96,9 @@
                         <li><a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a></li>
                     {% endfor %}
                 </ul>
+
+                {% render 'product-media-gallery', product: product, limit: 4 %}
+                {% render 'card-product' %}
             </div>
             <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"

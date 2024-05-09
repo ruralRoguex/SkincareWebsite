@@ -88,6 +88,7 @@
                 {% for product in collection.all_products %}
                     {% if product.tags contains 'dry-skin' %}
                         <p>{{ product.title }}</p>
+                        {% render 'card-product' %}
                     {% endif %}
                 {% endfor %}
 
@@ -96,9 +97,7 @@
                         <li><a href="/collections/all/{{ tag | handleize }}">{{ tag }}</a></li>
                     {% endfor %}
                 </ul>
-
-                {% render 'product-media-gallery', product: product, limit: 4 %}
-                {% render 'card-product' %}
+                {% render 'card-product', product: product, limit: 4  %}
             </div>
             <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"

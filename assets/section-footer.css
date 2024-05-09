@@ -9,6 +9,7 @@
 .footer__content-top {
   padding-bottom: 5rem;
   display: block;
+  padding: 5px 175px;
 }
 
 @media screen and (max-width: 749px) {
@@ -52,6 +53,8 @@
 .footer__content-bottom-wrapper {
   display: flex;
   width: 100%;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 749px) {

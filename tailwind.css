@@ -245,8 +245,8 @@ background-color: #CFC7C0 !important;
     align-items: flex-start;
 }
 .footer-block--menu {
-    max-width: 200px;
-    margin-right: 50px;
+    max-width: 200px !important;
+    margin-right: 50px !important;
 }
 
 

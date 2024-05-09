@@ -37,6 +37,7 @@
 }
 .button--primary.button-black {
     background-color: #000 !important;
+    color: #fff;;
     border-radius: 30px;
     text-transform: uppercase;
     padding: 10px, 30px, 10px, 30px;

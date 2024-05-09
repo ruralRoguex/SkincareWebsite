@@ -208,7 +208,21 @@
 }
 .button--primary.button-black {
     background-color: #000 !important;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 10px, 30px, 10px, 30px;
+    gap: 10px;
     border: none !important;
+
+    --shadow-horizontal-offset: none !important;
+    --shadow-vertical-offset: none !important;
+    --shadow-blur-radius: none !important;
+    --shadow-opacity: none !important;
+    --shadow-visible: none !important;
+    --border-offset: none !important;
+    --border-opacity: none !important;
+}
+.button--primary.button-white {
     background-color: #fff !important;
     border-radius: 30px;
     border: 1px solid #000;

@@ -51,7 +51,7 @@
     --border-offset: none !important;
     --border-opacity: none !important;
 }
-.button--primary.button-black {
+.button--primary.button-white {
     background-color: #fff !important;
     border-radius: 30px;
     border: 1px solid #000;

@@ -83,7 +83,11 @@
                 role="tabpanel"
                 aria-labelledby="pills-dry-skin-tab"
                 data-twe-tab-active>
-                Tab 1 content
+                {% for product in collection.all_products %}
+                    {% if product.tag contains 'dry-skin' %}
+                        {{ product.title }}
+                    {% endif %}
+                {% endfor %}
             </div>
             <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"

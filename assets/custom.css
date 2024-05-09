@@ -189,7 +189,7 @@
     font-family: "Roslindale";
     src: url("./assets/Roslindale-TextBold-Testing.woff");
 } */
-/* CSS Overwrites */
+/* CSS Overrides */
 .hidden {
     display: none !important;
 }
@@ -236,11 +236,14 @@
     border-bottom: 1px solid black;
 }
 /* Slideshow */
+#Slide-template--17039269462073__slideshow_JkXwfL-1 {
+    background-color: #F6F5EC;
+}
 .banner__media {
     right: 0 !important;
     width: 50% !important;
 }
-.banner__content {
+.slideshow__text {
     background: transparent !important;
 }
 .banner__heading {

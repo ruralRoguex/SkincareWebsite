@@ -197,13 +197,24 @@
     max-height: 67px;
     padding: 10px 3px 10px 3px !important;
 }
+.button {
+    font-family: Inconsolata;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+}
 .button--primary.button-black {
     background-color: #000 !important;
+    border: none !important;
+    background-color: #fff !important;
     border-radius: 30px;
+    border: 1px solid #000;
     text-transform: uppercase;
     padding: 10px, 30px, 10px, 30px;
     gap: 10px;
-    border: none !important;
 
     --shadow-horizontal-offset: none !important;
     --shadow-vertical-offset: none !important;

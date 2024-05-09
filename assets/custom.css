@@ -394,15 +394,25 @@ background-color: #CFC7C0 !important;
              column-gap: 70px !important;
     }
 }
+/* Footer */
+.footer {
+    border: none !important;
+}
+.footer__content-bottom {
+    border: none !important;
+}
+.footer__blocks-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer-block--menu {
+    max-width: 200px;
+    margin-right: 50px;
+}
 /* Media Rules */
-.slideshow__controls .slider-buttons {
-    display: none !important;
-}
-@media screen and (max-width: 749px) {
-    .slideshow__controls .slider-buttons {
-        display: block !important;
-    }
-}
 @media (prefers-color-scheme: dark){
     @media (min-width: 1440px){
         .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
@@ -410,3 +420,4 @@ background-color: #CFC7C0 !important;
         }
     }
 }
+

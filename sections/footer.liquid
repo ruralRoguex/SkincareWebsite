@@ -254,6 +254,50 @@
     {% endif %}
   >
     <div class="footer__content-bottom-wrapper page-width">
+    <!-- START-->
+    {%- for block in section.blocks -%}
+      <div
+        class="footer-block grid__item {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        {{ block.shopify_attributes }}
+        {% if settings.animations_reveal_on_scroll %}
+          data-cascade
+          style="--animation-order: {{ forloop.index }};"
+        {% endif %}
+      >
+        {%- case block.type -%}
+          {%- when '@app' -%}
+            {% render block %}
+            
+          {%- when 'image' -%}
+            <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+              {%- if block.settings.image != blank -%}
+                {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
+                <div
+                  class="footer-block__image-wrapper"
+                  style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                >
+                  <img
+                    srcset="{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
+                    src="{{ block.settings.image | image_url: width: 760 }}"
+                    alt="{{ block.settings.image.alt | escape }}"
+                    loading="lazy"
+                    width="{{ block.settings.image.width }}"
+                    height="{{ block.settings.image.height }}"
+                  >
+                </div>
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+              {%- endif -%}
+            </div>
+        {%- endcase -%}
+      </div>
+    {%- endfor -%}
+
+
+
+
+
+    <!-- END -->
       <div class="footer__column footer__localization isolate">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <localization-form>

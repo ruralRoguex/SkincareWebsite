@@ -42,13 +42,18 @@
     --border-offset: none !important;
     --border-opacity: none !important;
 }
-
 .button--primary.button-submit {
+    margin-bottom: 1rem;
     background-color: #000 !important;
     color: #fff;
     text-transform: uppercase;
-    padding: 10px, 30px, 10px, 30px;
     gap: 10px;
+    font-family: Inconsolata;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 1px;
+
 
     --shadow-horizontal-offset: none !important;
     --shadow-vertical-offset: none !important;
@@ -285,6 +290,13 @@ background-color: #CFC7C0 !important;
 }
 .black-dot {
     padding-right: 5px;
+}
+.newsletter {
+    font-family: Inconsolata;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
 
 /* Media Rules */

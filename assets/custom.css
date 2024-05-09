@@ -224,6 +224,7 @@
 }
 .button--primary.button-white {
     background-color: #fff !important;
+    color: #000;
     border-radius: 30px;
     border: 1px solid #000;
     text-transform: uppercase;

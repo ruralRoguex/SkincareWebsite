@@ -13,66 +13,66 @@
             data-twe-nav-ref>
                 <li role="presentation">
                     <a
-                        href="#pills-dry-skin"
+                        href="#dry-skin"
                         class="button button--primary button-black pointer-events"
-                        id="pills-dry-skin-tab"
+                        id="dry-skin-tab"
                         data-twe-toggle="pill"
-                        data-twe-target="#pills-dry-skin"
+                        data-twe-target="#dry-skin"
                         data-twe-nav-active
                         role="tab"
-                        aria-controls="pills-dry-skin"
+                        aria-controls="dry-skin"
                         aria-selected="true"
                         >Dry Skin</a
                     >
                 </li>
                 <li role="presentation">
                     <a
-                        href="#pills-combo-skin"
+                        href="#combo-skin"
                         class="button button--primary button-white pointer-events"
-                        id="pills-combo-skin-tab"
+                        id="combo-skin-tab"
                         data-twe-toggle="pill"
-                        data-twe-target="#pills-combo-skin"
+                        data-twe-target="#combo-skin"
                         role="tab"
-                        aria-controls="pills-combo-skin"
+                        aria-controls="combo-skin"
                         aria-selected="false"
                         >Combination Skin</a
                     >
                 </li>
                 <li role="presentation">
                     <a
-                        href="#pills-oily-skin"
+                        href="#oily-skin"
                         class="button button--primary button-white pointer-events"
-                        id="pills-oily-skin-tab"
+                        id="oily-skin-tab"
                         data-twe-toggle="pill"
-                        data-twe-target="#pills-oily-skin"
+                        data-twe-target="#oily-skin"
                         role="tab"
-                        aria-controls="pills-oily-skin"
+                        aria-controls="oily-skin"
                         aria-selected="false"
                         >Oily Skin</a
                     >
                 </li>
                 <li role="presentation">
                     <a
-                        href="#pills-normal"
+                        href="#normal"
                         class="button button--primary button-white pointer-events"
-                        id="pills-normal-tab"
+                        id="normal-tab"
                         data-twe-toggle="pill"
-                        data-twe-target="#pills-normal"
+                        data-twe-target="#normal"
                         role="tab"
-                        aria-controls="pills-normal"
+                        aria-controls="normal"
                         aria-selected="false"
                         >Normal</a
                     >
                 </li>
                 <li role="presentation">
                     <a
-                        href="#pills-acne-prone"
+                        href="#acne-prone"
                         class="button button--primary button-white pointer-events"
-                        id="pills-acne-prone-tab"
+                        id="acne-prone-tab"
                         data-twe-toggle="pill"
-                        data-twe-target="#pills-acne-prone"
+                        data-twe-target="#acne-prone"
                         role="tab"
-                        aria-controls="pills-acne-prone"
+                        aria-controls="acne-prone"
                         aria-selected="false"
                         >Acne Prone</a
                     >
@@ -81,9 +81,9 @@
         <div class="mb-6">
             <div
                 class="opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                id="pills-dry-skin"
+                id="dry-skin"
                 role="tabpanel"
-                aria-labelledby="pills-dry-skin-tab"
+                aria-labelledby="dry-skin-tab"
                 data-twe-tab-active>
                 {% for product in collection.all_products %}
                     {% if product.tags contains 'dry-skin' %}
@@ -99,30 +99,30 @@
             </div>
             <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                id="pills-combo-skin"
+                id="combo-skin"
                 role="tabpanel"
-                aria-labelledby="pills-combo-skin-tab">
+                aria-labelledby="combo-skin-tab">
                 Tab 2 content
             </div>
             <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                id="pills-oily-skin"
+                id="oily-skin"
                 role="tabpanel"
-                aria-labelledby="pills-oily-skin-tab">
+                aria-labelledby="oily-skin-tab">
                 Tab 3 content
             </div>
             <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                id="pills-normal"
+                id="normal"
                 role="tabpanel"
-                aria-labelledby="pills-normal-tab">
+                aria-labelledby="normal-tab">
                 Tab 4 disabled
             </div>
             <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
-                id="pills-acne-prone"
+                id="acne-prone"
                 role="tabpanel"
-                aria-labelledby="pills-acne-prone-tab">
+                aria-labelledby="acne-prone-tab">
                 Tab 5 content
             </div>
         </div>
@@ -134,11 +134,6 @@
     "@type": "Product",
     "name": {{ product.title | json }},
     "url": {{ request.origin | append: product.url | json }},
-    {% if seo_media -%}
-      "image": [
-        {{ seo_media | image_url: width: 1920 | prepend: "https:" | json }}
-      ],
-    {%- endif %}
     "description": {{ product.description | strip_html | json }},
     {% if product.selected_or_first_available_variant.sku != blank -%}
       "sku": {{ product.selected_or_first_available_variant.sku | json }},

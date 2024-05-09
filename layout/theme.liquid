@@ -34,7 +34,7 @@
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
 
     <!-- TW Elements (pills - Shop by Type) -->
-    <script type="text/javascript" src="../node_modules/tw-elements/js/tw-elements.umd.min.js" defer="defer"></script>
+    {% comment %} <script type="text/javascript" src="../node_modules/tw-elements/js/tw-elements.umd.min.js" defer="defer"></script> {% endcomment %}
     
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>

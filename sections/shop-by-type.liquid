@@ -85,13 +85,18 @@
                 role="tabpanel"
                 aria-labelledby="dry-skin-tab"
                 data-twe-tab-active>
-                {% for product in collection.all_products %}
+                {%- assign product = all_products[handle product] -%}
+
+                {% assign collection_handle = 'dry-skin' %}
+                {% for product in collections[collection_handle].products %}
+                    <p>{{ product.title }}</p>
+                {% endfor %}
+
+                {% for product in collection.products %}
                     {% if product.tags contains 'dry-skin' %}
                         <p>{{ product.title }}</p>
                     {% endif %}
                 {% endfor %}
-
-                {% render 'card-product'%}
             </div>
             <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"

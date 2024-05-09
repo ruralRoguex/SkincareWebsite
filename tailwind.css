@@ -43,6 +43,21 @@
     --border-opacity: none !important;
 }
 
+.button--primary.button-submit {
+    background-color: #000 !important;
+    text-transform: uppercase;
+    padding: 10px, 30px, 10px, 30px;
+    gap: 10px;
+
+    --shadow-horizontal-offset: none !important;
+    --shadow-vertical-offset: none !important;
+    --shadow-blur-radius: none !important;
+    --shadow-opacity: none !important;
+    --shadow-visible: none !important;
+    --border-offset: none !important;
+    --border-opacity: none !important;
+}
+
 /* Header */
 .logo {
     font-family: "Roslindale", "sans-serif";

@@ -32,13 +32,22 @@
             "heading": "Sign Up to Stay in Touch Newsletter Here",
             "subtext": "<p>This section looks the best when you keep the copy to 2 lines, any more than that then it looks messy.<\/p>"
           }
+        },
+        "image_PebcLF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skincare_websiteskincare-footer-logo.png",
+            "image_width": 550,
+            "alignment": "center"
+          }
         }
       },
       "block_order": [
         "link_list_g63pHn",
         "link_list_rntBBA",
         "link_list_mQNcBR",
-        "text_yKUG7B"
+        "text_yKUG7B",
+        "image_PebcLF"
       ],
       "settings": {
         "color_scheme": "scheme-1",

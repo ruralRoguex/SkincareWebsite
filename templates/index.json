@@ -132,6 +132,7 @@
     },
     "three_step_skincare_DHHFnd": {
       "type": "three-step-skincare",
+      "disabled": true,
       "settings": {
         "tagline": "Little Tagline Here",
         "heading": "Our 3-Step Skincare System",

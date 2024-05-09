@@ -172,7 +172,7 @@
 .image-with-text__grid .child:first-child {
 background-color: #D6D9CD !important;
 }
-.image-with-text__grid .child:nth-last-child() {
+.image-with-text__grid .child:nth-child(even) {
 background-color: #CFC7C0 !important;
 }
 

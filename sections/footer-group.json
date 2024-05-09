@@ -25,12 +25,20 @@
             "heading": "Footer Title Here",
             "menu": "footer"
           }
+        },
+        "text_yKUG7B": {
+          "type": "text",
+          "settings": {
+            "heading": "Sign Up to Stay in Touch Newsletter Here",
+            "subtext": "<p>This section looks the best when you keep the copy to 2 lines, any more than that then it looks messy.<\/p>"
+          }
         }
       },
       "block_order": [
         "link_list_g63pHn",
         "link_list_rntBBA",
-        "link_list_mQNcBR"
+        "link_list_mQNcBR",
+        "text_yKUG7B"
       ],
       "settings": {
         "color_scheme": "scheme-1",

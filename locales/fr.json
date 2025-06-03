@@ -69,7 +69,7 @@
   "newsletter": {
     "label": "E-mail(FR)",
     "success": "Merci de votre inscription",
-    "button_label": "111"
+    "button_label": "S'inscrire"
   },
   "accessibility": {
     "skip_to_text": "Ignorer et passer au contenu",

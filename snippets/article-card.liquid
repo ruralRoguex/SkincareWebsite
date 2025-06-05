@@ -141,7 +141,8 @@
             </a>
           </h3>
           <div>
-            <p class="readmore-btn underline-links-hover">Read More</p>
+            <p class="readmore-btn underline-links-hover">{{ 'blogs.article.read_more' | t }}</p>
+            <p class="readmore-btn underline-links-hover">Read more</p>
           </div>
             <div class="article-card__footer">
               {%- if article.comments_count > 0 and blog.comments_enabled? -%}
